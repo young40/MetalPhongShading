@@ -96,7 +96,7 @@ class Renderer: NSObject, MTKViewDelegate {
         }
         
         super.init()
-        
+        self.initNotification()
     }
     
     class func buildMetalVertexDescriptor() -> MTLVertexDescriptor {
