@@ -15,6 +15,8 @@ class GameViewController: UIViewController {
     var renderer: Renderer!
     var mtkView: MTKView!
 
+    @IBOutlet weak var slider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,5 +44,13 @@ class GameViewController: UIViewController {
         renderer.mtkView(mtkView, drawableSizeWillChange: mtkView.drawableSize)
 
         mtkView.delegate = renderer
+        
+        onChanged(slider)
+    }
+    
+    @IBAction func onChanged(_ sender: UISlider) {
+        print("\(sender.value)")
+        
+        renderer.step = sender.value
     }
 }

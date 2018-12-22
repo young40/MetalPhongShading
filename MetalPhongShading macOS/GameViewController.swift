@@ -22,8 +22,6 @@ class GameViewController: NSViewController {
         
         slider.maxValue = 0.004
         slider.maxValue = 0.1
-        
-//        slider.acceptsFirstMouse(for: <#T##NSEvent?#>)
 
         guard let mtkView = self.view as? MTKView else {
             print("View attached to GameViewController is not an MTKView")
