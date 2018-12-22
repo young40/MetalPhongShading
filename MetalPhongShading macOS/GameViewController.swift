@@ -14,9 +14,16 @@ class GameViewController: NSViewController {
 
     var renderer: Renderer!
     var mtkView: MTKView!
-
+    
+    @IBOutlet weak var slider: NSSlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        slider.maxValue = 0.004
+        slider.maxValue = 0.1
+        
+//        slider.acceptsFirstMouse(for: <#T##NSEvent?#>)
 
         guard let mtkView = self.view as? MTKView else {
             print("View attached to GameViewController is not an MTKView")
@@ -41,5 +48,12 @@ class GameViewController: NSViewController {
         renderer.mtkView(mtkView, drawableSizeWillChange: mtkView.drawableSize)
 
         mtkView.delegate = renderer
+        
+        onChange(slider)
+    }
+    
+    @IBAction func onChange(_ sender: NSSlider) {
+        print("\(sender.floatValue)")
+        renderer.step = Float(sender.doubleValue)
     }
 }

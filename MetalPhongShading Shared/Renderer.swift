@@ -44,6 +44,8 @@ class Renderer: NSObject, MTKViewDelegate {
     
     var mesh: MTKMesh
     
+    public var step: Float = 0.01
+    
     init?(metalKitView: MTKView) {
         self.device = metalKitView.device!
         guard let queue = self.device.makeCommandQueue() else { return nil }
@@ -208,7 +210,7 @@ class Renderer: NSObject, MTKViewDelegate {
         let modelMatrix = matrix4x4_rotation(radians: rotation, axis: rotationAxis)
         let viewMatrix = matrix4x4_translation(0.0, 0.0, -8.0)
         uniforms[0].modelViewMatrix = simd_mul(viewMatrix, modelMatrix)
-        rotation += 0.01
+        rotation += step
     }
     
     func draw(in view: MTKView) {
