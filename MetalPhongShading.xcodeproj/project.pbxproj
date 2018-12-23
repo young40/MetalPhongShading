@@ -26,9 +26,6 @@
 		D5CAB76C21CBF64F00CE08F1 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CAB73821CBF64D00CE08F1 /* Renderer.swift */; };
 		D5CAB76D21CBF64F00CE08F1 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CAB73821CBF64D00CE08F1 /* Renderer.swift */; };
 		D5CAB76E21CBF64F00CE08F1 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CAB73821CBF64D00CE08F1 /* Renderer.swift */; };
-		D5CAB76F21CBF64F00CE08F1 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = D5CAB73921CBF64D00CE08F1 /* ShaderTypes.h */; };
-		D5CAB77021CBF64F00CE08F1 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = D5CAB73921CBF64D00CE08F1 /* ShaderTypes.h */; };
-		D5CAB77121CBF64F00CE08F1 /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = D5CAB73921CBF64D00CE08F1 /* ShaderTypes.h */; };
 		D5CAB77221CBF64F00CE08F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CAB73A21CBF64F00CE08F1 /* Assets.xcassets */; };
 		D5CAB77321CBF64F00CE08F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CAB73A21CBF64F00CE08F1 /* Assets.xcassets */; };
 		D5CAB77421CBF64F00CE08F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CAB73A21CBF64F00CE08F1 /* Assets.xcassets */; };
@@ -36,9 +33,9 @@
 
 /* Begin PBXFileReference section */
 		D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderNotification.swift; sourceTree = "<group>"; };
+		D58F57A621CF1496002D1CD7 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		D5CAB73721CBF64D00CE08F1 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		D5CAB73821CBF64D00CE08F1 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		D5CAB73921CBF64D00CE08F1 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		D5CAB73A21CBF64F00CE08F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CAB73F21CBF64F00CE08F1 /* MetalPhongShading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalPhongShading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CAB74221CBF64F00CE08F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,7 +97,7 @@
 				D5CAB73721CBF64D00CE08F1 /* Shaders.metal */,
 				D5CAB73821CBF64D00CE08F1 /* Renderer.swift */,
 				D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */,
-				D5CAB73921CBF64D00CE08F1 /* ShaderTypes.h */,
+				D58F57A621CF1496002D1CD7 /* ShaderTypes.h */,
 				D5CAB73A21CBF64F00CE08F1 /* Assets.xcassets */,
 			);
 			path = MetalPS_Shared;
@@ -153,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D5CAB73E21CBF64F00CE08F1 /* MetalPhongShading iOS */ = {
+		D5CAB73E21CBF64F00CE08F1 /* MetalPS_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5CAB77721CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPhongShading iOS" */;
+			buildConfigurationList = D5CAB77721CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPS_iOS" */;
 			buildPhases = (
 				D5CAB73B21CBF64F00CE08F1 /* Sources */,
 				D5CAB73C21CBF64F00CE08F1 /* Frameworks */,
@@ -165,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = "MetalPhongShading iOS";
+			name = MetalPS_iOS;
 			productName = "MetalPhongShading iOS";
 			productReference = D5CAB73F21CBF64F00CE08F1 /* MetalPhongShading.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D5CAB75021CBF64F00CE08F1 /* MetalPhongShading tvOS */ = {
+		D5CAB75021CBF64F00CE08F1 /* MetalPS_tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5CAB77A21CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPhongShading tvOS" */;
+			buildConfigurationList = D5CAB77A21CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPS_tvOS" */;
 			buildPhases = (
 				D5CAB74D21CBF64F00CE08F1 /* Sources */,
 				D5CAB74E21CBF64F00CE08F1 /* Frameworks */,
@@ -182,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = "MetalPhongShading tvOS";
+			name = MetalPS_tvOS;
 			productName = "MetalPhongShading tvOS";
 			productReference = D5CAB75121CBF64F00CE08F1 /* MetalPhongShading.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D5CAB75E21CBF64F00CE08F1 /* MetalPhongShading macOS */ = {
+		D5CAB75E21CBF64F00CE08F1 /* MetalPS_macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5CAB77D21CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPhongShading macOS" */;
+			buildConfigurationList = D5CAB77D21CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPS_macOS" */;
 			buildPhases = (
 				D5CAB75B21CBF64F00CE08F1 /* Sources */,
 				D5CAB75C21CBF64F00CE08F1 /* Frameworks */,
@@ -199,7 +196,7 @@
 			);
 			dependencies = (
 			);
-			name = "MetalPhongShading macOS";
+			name = MetalPS_macOS;
 			productName = "MetalPhongShading macOS";
 			productReference = D5CAB75F21CBF64F00CE08F1 /* MetalPhongShading.app */;
 			productType = "com.apple.product-type.application";
@@ -238,9 +235,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5CAB73E21CBF64F00CE08F1 /* MetalPhongShading iOS */,
-				D5CAB75021CBF64F00CE08F1 /* MetalPhongShading tvOS */,
-				D5CAB75E21CBF64F00CE08F1 /* MetalPhongShading macOS */,
+				D5CAB73E21CBF64F00CE08F1 /* MetalPS_iOS */,
+				D5CAB75021CBF64F00CE08F1 /* MetalPS_tvOS */,
+				D5CAB75E21CBF64F00CE08F1 /* MetalPS_macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -250,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5CAB76F21CBF64F00CE08F1 /* ShaderTypes.h in Resources */,
 				D5CAB74821CBF64F00CE08F1 /* Main.storyboard in Resources */,
 				D5CAB77221CBF64F00CE08F1 /* Assets.xcassets in Resources */,
 				D5CAB74B21CBF64F00CE08F1 /* LaunchScreen.storyboard in Resources */,
@@ -263,7 +259,6 @@
 			files = (
 				D5CAB75921CBF64F00CE08F1 /* Main.storyboard in Resources */,
 				D5CAB77321CBF64F00CE08F1 /* Assets.xcassets in Resources */,
-				D5CAB77021CBF64F00CE08F1 /* ShaderTypes.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +268,6 @@
 			files = (
 				D5CAB76721CBF64F00CE08F1 /* Main.storyboard in Resources */,
 				D5CAB77421CBF64F00CE08F1 /* Assets.xcassets in Resources */,
-				D5CAB77121CBF64F00CE08F1 /* ShaderTypes.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +464,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7HZ7R53M86;
-				INFOPLIST_FILE = "MetalPhongShading iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MetalPS_iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,7 +486,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7HZ7R53M86;
-				INFOPLIST_FILE = "MetalPhongShading iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MetalPS_iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,7 +509,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7HZ7R53M86;
-				INFOPLIST_FILE = "MetalPhongShading tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MetalPS_tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,7 +531,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7HZ7R53M86;
-				INFOPLIST_FILE = "MetalPhongShading tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MetalPS_tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HZ7R53M86;
-				INFOPLIST_FILE = "MetalPhongShading macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MetalPS_macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -583,7 +577,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HZ7R53M86;
-				INFOPLIST_FILE = "MetalPhongShading macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MetalPS_macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -609,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5CAB77721CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPhongShading iOS" */ = {
+		D5CAB77721CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPS_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5CAB77821CBF64F00CE08F1 /* Debug */,
@@ -618,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5CAB77A21CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPhongShading tvOS" */ = {
+		D5CAB77A21CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPS_tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5CAB77B21CBF64F00CE08F1 /* Debug */,
@@ -627,7 +621,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5CAB77D21CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPhongShading macOS" */ = {
+		D5CAB77D21CBF64F00CE08F1 /* Build configuration list for PBXNativeTarget "MetalPS_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5CAB77E21CBF64F00CE08F1 /* Debug */,
