@@ -86,15 +86,15 @@
 		D5CAB73121CBF64D00CE08F1 = {
 			isa = PBXGroup;
 			children = (
-				D5CAB73621CBF64D00CE08F1 /* MetalPhongShading Shared */,
-				D5CAB74121CBF64F00CE08F1 /* MetalPhongShading iOS */,
-				D5CAB75221CBF64F00CE08F1 /* MetalPhongShading tvOS */,
-				D5CAB76021CBF64F00CE08F1 /* MetalPhongShading macOS */,
+				D5CAB73621CBF64D00CE08F1 /* MetalPS_Shared */,
+				D5CAB74121CBF64F00CE08F1 /* MetalPS_iOS */,
+				D5CAB75221CBF64F00CE08F1 /* MetalPS_tvOS */,
+				D5CAB76021CBF64F00CE08F1 /* MetalPS_macOS */,
 				D5CAB74021CBF64F00CE08F1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D5CAB73621CBF64D00CE08F1 /* MetalPhongShading Shared */ = {
+		D5CAB73621CBF64D00CE08F1 /* MetalPS_Shared */ = {
 			isa = PBXGroup;
 			children = (
 				D5CAB73721CBF64D00CE08F1 /* Shaders.metal */,
@@ -103,7 +103,7 @@
 				D5CAB73921CBF64D00CE08F1 /* ShaderTypes.h */,
 				D5CAB73A21CBF64F00CE08F1 /* Assets.xcassets */,
 			);
-			path = "MetalPhongShading Shared";
+			path = MetalPS_Shared;
 			sourceTree = "<group>";
 		};
 		D5CAB74021CBF64F00CE08F1 /* Products */ = {
@@ -116,7 +116,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D5CAB74121CBF64F00CE08F1 /* MetalPhongShading iOS */ = {
+		D5CAB74121CBF64F00CE08F1 /* MetalPS_iOS */ = {
 			isa = PBXGroup;
 			children = (
 				D5CAB74221CBF64F00CE08F1 /* AppDelegate.swift */,
@@ -125,10 +125,10 @@
 				D5CAB74921CBF64F00CE08F1 /* LaunchScreen.storyboard */,
 				D5CAB74C21CBF64F00CE08F1 /* Info.plist */,
 			);
-			path = "MetalPhongShading iOS";
+			path = MetalPS_iOS;
 			sourceTree = "<group>";
 		};
-		D5CAB75221CBF64F00CE08F1 /* MetalPhongShading tvOS */ = {
+		D5CAB75221CBF64F00CE08F1 /* MetalPS_tvOS */ = {
 			isa = PBXGroup;
 			children = (
 				D5CAB75321CBF64F00CE08F1 /* AppDelegate.swift */,
@@ -136,10 +136,10 @@
 				D5CAB75721CBF64F00CE08F1 /* Main.storyboard */,
 				D5CAB75A21CBF64F00CE08F1 /* Info.plist */,
 			);
-			path = "MetalPhongShading tvOS";
+			path = MetalPS_tvOS;
 			sourceTree = "<group>";
 		};
-		D5CAB76021CBF64F00CE08F1 /* MetalPhongShading macOS */ = {
+		D5CAB76021CBF64F00CE08F1 /* MetalPS_macOS */ = {
 			isa = PBXGroup;
 			children = (
 				D5CAB76121CBF64F00CE08F1 /* AppDelegate.swift */,
@@ -147,7 +147,7 @@
 				D5CAB76521CBF64F00CE08F1 /* Main.storyboard */,
 				D5CAB76821CBF64F00CE08F1 /* Info.plist */,
 			);
-			path = "MetalPhongShading macOS";
+			path = MetalPS_macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
