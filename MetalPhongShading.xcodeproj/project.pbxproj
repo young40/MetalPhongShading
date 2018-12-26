@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5154D8B21D3CE1200D4A16A /* MenuHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5154D8A21D3CE1200D4A16A /* MenuHandler.swift */; };
 		D58F57A321CEAFE2002D1CD7 /* RenderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */; };
 		D58F57A421CEAFE2002D1CD7 /* RenderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */; };
 		D58F57A521CEAFE2002D1CD7 /* RenderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5154D8A21D3CE1200D4A16A /* MenuHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHandler.swift; sourceTree = "<group>"; };
 		D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderNotification.swift; sourceTree = "<group>"; };
 		D58F57A621CF1496002D1CD7 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		D5CAB73721CBF64D00CE08F1 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				D5CAB76321CBF64F00CE08F1 /* MacGameViewController.swift */,
 				D5CAB76521CBF64F00CE08F1 /* Main.storyboard */,
 				D5CAB76821CBF64F00CE08F1 /* Info.plist */,
+				D5154D8A21D3CE1200D4A16A /* MenuHandler.swift */,
 			);
 			path = MetalPS_macOS;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CAB76E21CBF64F00CE08F1 /* Renderer.swift in Sources */,
+				D5154D8B21D3CE1200D4A16A /* MenuHandler.swift in Sources */,
 				D5CAB76B21CBF64F00CE08F1 /* Shaders.metal in Sources */,
 				D58F57A521CEAFE2002D1CD7 /* RenderNotification.swift in Sources */,
 				D5CAB76421CBF64F00CE08F1 /* MacGameViewController.swift in Sources */,
