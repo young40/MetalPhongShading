@@ -19,7 +19,17 @@ class MenuHander
     
     @objc func onOpenFile(_ notification: Notification)
     {
+        let dialog = NSOpenPanel()
         
+        dialog.allowedFileTypes = ["obj"]
+        
+        dialog.runModal()
+        
+        guard let filePath = dialog.url?.path else {
+            return
+        }
+        
+        print("\(filePath)")
     }
     
     @objc func onExportPNG(_ notification: Notification)
