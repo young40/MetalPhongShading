@@ -9,7 +9,21 @@
 import Foundation
 import AppKit
 
-class MenuHander: NSObject, NSApplicationDelegate
+class MenuHander
 {
+    init()
+    {
+        NotificationCenter.default.addObserver(self, selector: #selector(onOpenFile(_:)),  name: NotificationName.onOpenFile,  object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onExportPNG(_:)), name: NotificationName.onExportPNG, object: nil)
+    }
     
+    @objc func onOpenFile(_ notification: Notification)
+    {
+        
+    }
+    
+    @objc func onExportPNG(_ notification: Notification)
+    {
+        
+    }
 }

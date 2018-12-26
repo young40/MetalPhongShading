@@ -12,11 +12,11 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func onOpenFile(_ sender: NSMenuItem) {
-        
+        NotificationCenter.default.post(Notification(name: NotificationName.onOpenFile))
     }
     
     @IBAction func onExportPNG(_ sender: NSMenuItem) {
-        
+        NotificationCenter.default.post(Notification(name: NotificationName.onExportPNG))
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {

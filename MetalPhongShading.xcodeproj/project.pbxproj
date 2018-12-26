@@ -148,9 +148,9 @@
 			children = (
 				D5CAB76121CBF64F00CE08F1 /* AppDelegate.swift */,
 				D5CAB76321CBF64F00CE08F1 /* MacGameViewController.swift */,
+				D5154D8A21D3CE1200D4A16A /* MenuHandler.swift */,
 				D5CAB76521CBF64F00CE08F1 /* Main.storyboard */,
 				D5CAB76821CBF64F00CE08F1 /* Info.plist */,
-				D5154D8A21D3CE1200D4A16A /* MenuHandler.swift */,
 			);
 			path = MetalPS_macOS;
 			sourceTree = "<group>";

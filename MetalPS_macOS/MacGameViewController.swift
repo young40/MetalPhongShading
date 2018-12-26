@@ -17,6 +17,8 @@ class MacGameViewController: NSViewController {
     
     @IBOutlet weak var slider: NSSlider!
     
+    private let menuHandler = MenuHander()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
