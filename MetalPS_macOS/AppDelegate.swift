@@ -11,8 +11,14 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
+    @IBAction func onOpenFile(_ sender: NSMenuItem) {
+        
+    }
+    
+    @IBAction func onExportPNG(_ sender: NSMenuItem) {
+        
+    }
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }

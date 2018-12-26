@@ -66,7 +66,7 @@
                                         </menuItem>
                                         <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
                                             <connections>
-                                                <action selector="openDocument:" target="Ady-hI-5gd" id="bVn-NM-KNZ"/>
+                                                <action selector="onOpenFile:" target="Voe-Tx-rLC" id="kQN-z0-LNF"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Open Recent" id="tXI-mr-wws">
@@ -90,7 +90,7 @@
                                         </menuItem>
                                         <menuItem title="Save…" keyEquivalent="s" id="pxx-59-PXV">
                                             <connections>
-                                                <action selector="saveDocument:" target="Ady-hI-5gd" id="teZ-XB-qJY"/>
+                                                <action selector="onExportPNG:" target="Voe-Tx-rLC" id="oKE-fJ-ifu"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Save As…" keyEquivalent="S" id="Bw7-FT-i3A">
