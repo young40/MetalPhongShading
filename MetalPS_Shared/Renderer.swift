@@ -44,7 +44,7 @@ class Renderer: NSObject, MTKViewDelegate {
     
     var mesh: MTKMesh
     
-    public var step: Float = 0.01
+    internal var step: Float = 0.01
     
     init?(metalKitView: MTKView) {
         self.device = metalKitView.device!

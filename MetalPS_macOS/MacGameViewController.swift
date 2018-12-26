@@ -53,6 +53,6 @@ class MacGameViewController: NSViewController {
     @IBAction func onChange(_ sender: NSSlider) {
         print("\(sender.floatValue)")
 //        renderer.step = Float(sender.doubleValue)
-        NotificationCenter.default.post(name: Notification.Name("onchange"), object: nil, userInfo: ["value": sender.doubleValue])
+        NotificationCenter.default.post(name: NotificationName.onChange, object: nil, userInfo: ["value": sender.doubleValue])
     }
 }

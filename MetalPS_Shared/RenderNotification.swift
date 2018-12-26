@@ -11,7 +11,7 @@ import Foundation
 extension Renderer {
     func initNotification()
     {
-        NotificationCenter.default.addObserver(self, selector: #selector(onSetStep(_:)), name: Notification.Name("onchange"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onSetStep(_:)), name: NotificationName.onChange, object: nil)
     }
     
     @objc func onSetStep(_ notification: Notification)

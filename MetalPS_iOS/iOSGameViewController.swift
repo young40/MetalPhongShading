@@ -51,6 +51,6 @@ class iOSGameViewController: UIViewController {
     @IBAction func onChanged(_ sender: UISlider) {
         print("\(sender.value)")
         
-        renderer.step = sender.value
+        NotificationCenter.default.post(name: NotificationName.onChange, object: nil, userInfo: ["value": Double(sender.value)])
     }
 }
