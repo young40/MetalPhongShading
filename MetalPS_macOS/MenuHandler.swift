@@ -29,7 +29,9 @@ class MenuHander
             return
         }
         
-        print("\(filePath)")
+        print("加载模型 \(filePath)")
+        
+        NotificationCenter.default.post(name: NotificationName.onLoadModel, object: filePath, userInfo: nil)
     }
     
     @objc func onExportPNG(_ notification: Notification)

@@ -11,6 +11,9 @@
 		D5154D8D21D3D89A00D4A16A /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5154D8C21D3D89A00D4A16A /* NotificationName.swift */; };
 		D5154D8E21D3DA0A00D4A16A /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5154D8C21D3D89A00D4A16A /* NotificationName.swift */; };
 		D5154D8F21D3DA0B00D4A16A /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5154D8C21D3D89A00D4A16A /* NotificationName.swift */; };
+		D573AC6721D68AF400771E23 /* RenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC6621D68AF400771E23 /* RenderModel.swift */; };
+		D573AC6821D68D2100771E23 /* RenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC6621D68AF400771E23 /* RenderModel.swift */; };
+		D573AC6921D68D2100771E23 /* RenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC6621D68AF400771E23 /* RenderModel.swift */; };
 		D58F57A321CEAFE2002D1CD7 /* RenderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */; };
 		D58F57A421CEAFE2002D1CD7 /* RenderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */; };
 		D58F57A521CEAFE2002D1CD7 /* RenderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */; };
@@ -38,6 +41,7 @@
 /* Begin PBXFileReference section */
 		D5154D8A21D3CE1200D4A16A /* MenuHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHandler.swift; sourceTree = "<group>"; };
 		D5154D8C21D3D89A00D4A16A /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		D573AC6621D68AF400771E23 /* RenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderModel.swift; sourceTree = "<group>"; };
 		D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderNotification.swift; sourceTree = "<group>"; };
 		D58F57A621CF1496002D1CD7 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		D5CAB73721CBF64D00CE08F1 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			children = (
 				D5CAB73721CBF64D00CE08F1 /* Shaders.metal */,
 				D5CAB73821CBF64D00CE08F1 /* Renderer.swift */,
+				D573AC6621D68AF400771E23 /* RenderModel.swift */,
 				D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */,
 				D5154D8C21D3D89A00D4A16A /* NotificationName.swift */,
 				D58F57A621CF1496002D1CD7 /* ShaderTypes.h */,
@@ -291,6 +296,7 @@
 				D5CAB76921CBF64F00CE08F1 /* Shaders.metal in Sources */,
 				D58F57A321CEAFE2002D1CD7 /* RenderNotification.swift in Sources */,
 				D5CAB74521CBF64F00CE08F1 /* iOSGameViewController.swift in Sources */,
+				D573AC6721D68AF400771E23 /* RenderModel.swift in Sources */,
 				D5CAB74321CBF64F00CE08F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +310,7 @@
 				D5CAB76A21CBF64F00CE08F1 /* Shaders.metal in Sources */,
 				D58F57A421CEAFE2002D1CD7 /* RenderNotification.swift in Sources */,
 				D5CAB75621CBF64F00CE08F1 /* GameViewController.swift in Sources */,
+				D573AC6921D68D2100771E23 /* RenderModel.swift in Sources */,
 				D5CAB75421CBF64F00CE08F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +324,7 @@
 				D5CAB76B21CBF64F00CE08F1 /* Shaders.metal in Sources */,
 				D5154D8E21D3DA0A00D4A16A /* NotificationName.swift in Sources */,
 				D58F57A521CEAFE2002D1CD7 /* RenderNotification.swift in Sources */,
+				D573AC6821D68D2100771E23 /* RenderModel.swift in Sources */,
 				D5CAB76421CBF64F00CE08F1 /* MacGameViewController.swift in Sources */,
 				D5CAB76221CBF64F00CE08F1 /* AppDelegate.swift in Sources */,
 			);

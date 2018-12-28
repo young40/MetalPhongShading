@@ -13,5 +13,7 @@ class NotificationName
     static let onOpenFile  = Notification.Name("onOpenFile")
     static let onExportPNG = Notification.Name("onExportPNG")
     
-    static let onChange = Notification.Name("onChange")
+    static let onChange    = Notification.Name("onChange")
+    
+    static let onLoadModel = Notification.Name("onLoadModel")
 }
