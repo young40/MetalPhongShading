@@ -11,15 +11,19 @@ import Foundation
 extension Renderer {
     func initNotification()
     {
-        let notifi = NotificationCenter.default
+        let notification = NotificationCenter.default
         
-        notifi.addObserver(self, selector: #selector(onSetStep(_:)),
+        notification.addObserver(self, selector: #selector(onSetStep(_:)),
                            name: NotificationName.onChange, object: nil)
         
-        notifi.addObserver(self, selector: #selector(onLoadModel(_:)),
+        notification.addObserver(self, selector: #selector(onLoadModel(_:)),
                            name: NotificationName.onLoadModel, object: nil)
         
-        notifi.addObserver(self, selector: #selector(onScale(_:)), name: NotificationName.onScale, object: nil)
+        notification.addObserver(self, selector: #selector(onScale(_:)),
+                           name: NotificationName.onScale, object: nil)
+        
+        notification.addObserver(self, selector: #selector(onMoveX(_:)), name: NotificationName.onMoveX, object: nil)
+        notification.addObserver(self, selector: #selector(onMoveY(_:)), name: NotificationName.onMoveY, object: nil)
     }
     
     @objc func onSetStep(_ notification: Notification)

@@ -18,7 +18,25 @@ extension MTKView
     }
     
     override open func keyDown(with event: NSEvent) {
-        print("keydown")
+        switch(event.characters!) {
+        case "w":
+            self.onMoveUp()
+            break
+        case "s":
+            self.onMoveDown()
+            break
+        case "a":
+            self.onMoveLeft()
+            break
+        case "d":
+            self.onMoveRight()
+            break
+        case "r":
+            self.onResetAll()
+        default:
+            break
+        }
+        print("\(event.characters!)")
     }
     
     override open func mouseDown(with event: NSEvent) {
@@ -35,5 +53,30 @@ extension MTKView
     
     override open func scrollWheel(with event: NSEvent) {
         NotificationCenter.default.post(name: NotificationName.onScale, object: event.deltaY)
+    }
+    
+    func onMoveUp()
+    {
+        NotificationCenter.default.post(name: NotificationName.onMoveY, object: Float(0.1))
+    }
+    
+    func onMoveDown()
+    {
+        NotificationCenter.default.post(name: NotificationName.onMoveY, object: Float(-0.1))
+    }
+    
+    func onMoveLeft()
+    {
+        NotificationCenter.default.post(name: NotificationName.onMoveX, object: Float(-0.1))
+    }
+    
+    func onMoveRight()
+    {
+        NotificationCenter.default.post(name: NotificationName.onMoveX, object: Float(0.1))
+    }
+    
+    func onResetAll()
+    {
+        
     }
 }

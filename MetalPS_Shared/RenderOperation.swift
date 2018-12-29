@@ -30,4 +30,22 @@ extension Renderer
             self.scale = 100
         }
     }
+    
+    @objc func onMoveX(_ notification: Notification)
+    {
+        guard let offset = notification.object as? Float else {
+            return
+        }
+        
+        self.offsetX += offset
+    }
+    
+    @objc func onMoveY(_ notification: Notification)
+    {
+        guard let offset = notification.object as? Float else {
+            return
+        }
+        
+        self.offsetY += offset
+    }
 }
