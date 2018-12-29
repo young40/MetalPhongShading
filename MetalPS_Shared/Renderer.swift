@@ -41,6 +41,7 @@ class Renderer: NSObject, MTKViewDelegate {
     var projectionMatrix: matrix_float4x4 = matrix_float4x4()
     
     var rotation: Float = 0
+    var scale:    Float = 0
     
     var mesh: MTKMesh
     
@@ -208,7 +209,8 @@ class Renderer: NSObject, MTKViewDelegate {
         
         let rotationAxis = float3(0, 1, 0)
         let modelMatrix = matrix4x4_rotation(radians: rotation, axis: rotationAxis)
-        let viewMatrix = matrix4x4_translation(0.0, 0.0, -8.0)
+        let viewMatrix = matrix4x4_translation(0.0, 0.0, -8.0 + scale)
+        
         uniforms[0].modelViewMatrix = simd_mul(viewMatrix, modelMatrix)
         rotation += step
     }

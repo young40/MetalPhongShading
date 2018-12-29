@@ -24,4 +24,16 @@ extension MTKView
     override open func mouseDown(with event: NSEvent) {
         print("mousedown")
     }
+    
+    override open func rightMouseDown(with event: NSEvent) {
+        print("right mouse")
+    }
+    
+    override open func otherMouseDown(with event: NSEvent) {
+        print("other mousss")
+    }
+    
+    override open func scrollWheel(with event: NSEvent) {
+        NotificationCenter.default.post(name: NotificationName.onScale, object: event.deltaY)
+    }
 }

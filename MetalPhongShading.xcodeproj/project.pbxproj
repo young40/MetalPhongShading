@@ -15,6 +15,9 @@
 		D573AC6821D68D2100771E23 /* RenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC6621D68AF400771E23 /* RenderModel.swift */; };
 		D573AC6921D68D2100771E23 /* RenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC6621D68AF400771E23 /* RenderModel.swift */; };
 		D573AC6B21D6F8EA00771E23 /* MTKViewKeyboardMouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC6A21D6F8EA00771E23 /* MTKViewKeyboardMouse.swift */; };
+		D573AC7221D73D8900771E23 /* RenderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC7121D73D8900771E23 /* RenderOperation.swift */; };
+		D573AC7321D73D8900771E23 /* RenderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC7121D73D8900771E23 /* RenderOperation.swift */; };
+		D573AC7421D73D8900771E23 /* RenderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC7121D73D8900771E23 /* RenderOperation.swift */; };
 		D58F57A321CEAFE2002D1CD7 /* RenderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */; };
 		D58F57A421CEAFE2002D1CD7 /* RenderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */; };
 		D58F57A521CEAFE2002D1CD7 /* RenderNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */; };
@@ -44,6 +47,7 @@
 		D5154D8C21D3D89A00D4A16A /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		D573AC6621D68AF400771E23 /* RenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderModel.swift; sourceTree = "<group>"; };
 		D573AC6A21D6F8EA00771E23 /* MTKViewKeyboardMouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTKViewKeyboardMouse.swift; sourceTree = "<group>"; };
+		D573AC7121D73D8900771E23 /* RenderOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderOperation.swift; sourceTree = "<group>"; };
 		D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderNotification.swift; sourceTree = "<group>"; };
 		D58F57A621CF1496002D1CD7 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		D5CAB73721CBF64D00CE08F1 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				D5CAB73821CBF64D00CE08F1 /* Renderer.swift */,
 				D573AC6621D68AF400771E23 /* RenderModel.swift */,
 				D58F57A221CEAFE2002D1CD7 /* RenderNotification.swift */,
+				D573AC7121D73D8900771E23 /* RenderOperation.swift */,
 				D5154D8C21D3D89A00D4A16A /* NotificationName.swift */,
 				D58F57A621CF1496002D1CD7 /* ShaderTypes.h */,
 				D5CAB73A21CBF64F00CE08F1 /* Assets.xcassets */,
@@ -295,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CAB76C21CBF64F00CE08F1 /* Renderer.swift in Sources */,
+				D573AC7221D73D8900771E23 /* RenderOperation.swift in Sources */,
 				D5154D8D21D3D89A00D4A16A /* NotificationName.swift in Sources */,
 				D5CAB76921CBF64F00CE08F1 /* Shaders.metal in Sources */,
 				D58F57A321CEAFE2002D1CD7 /* RenderNotification.swift in Sources */,
@@ -309,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CAB76D21CBF64F00CE08F1 /* Renderer.swift in Sources */,
+				D573AC7321D73D8900771E23 /* RenderOperation.swift in Sources */,
 				D5154D8F21D3DA0B00D4A16A /* NotificationName.swift in Sources */,
 				D5CAB76A21CBF64F00CE08F1 /* Shaders.metal in Sources */,
 				D58F57A421CEAFE2002D1CD7 /* RenderNotification.swift in Sources */,
@@ -329,6 +336,7 @@
 				D5154D8E21D3DA0A00D4A16A /* NotificationName.swift in Sources */,
 				D58F57A521CEAFE2002D1CD7 /* RenderNotification.swift in Sources */,
 				D573AC6821D68D2100771E23 /* RenderModel.swift in Sources */,
+				D573AC7421D73D8900771E23 /* RenderOperation.swift in Sources */,
 				D5CAB76421CBF64F00CE08F1 /* MacGameViewController.swift in Sources */,
 				D5CAB76221CBF64F00CE08F1 /* AppDelegate.swift in Sources */,
 			);

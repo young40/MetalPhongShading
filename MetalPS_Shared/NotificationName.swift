@@ -16,4 +16,6 @@ class NotificationName
     static let onChange    = Notification.Name("onChange")
     
     static let onLoadModel = Notification.Name("onLoadModel")
+    
+    static let onScale = Notification.Name("onScale")
 }

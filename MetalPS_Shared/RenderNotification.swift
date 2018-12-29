@@ -18,6 +18,8 @@ extension Renderer {
         
         notifi.addObserver(self, selector: #selector(onLoadModel(_:)),
                            name: NotificationName.onLoadModel, object: nil)
+        
+        notifi.addObserver(self, selector: #selector(onScale(_:)), name: NotificationName.onScale, object: nil)
     }
     
     @objc func onSetStep(_ notification: Notification)
