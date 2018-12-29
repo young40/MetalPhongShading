@@ -714,7 +714,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="544" id="XBJ-Mr-oOl"/>
                                 </constraints>
-                                <sliderCell key="cell" continuous="YES" alignment="left" minValue="0.040000000000000001" maxValue="0.10000000000000001" doubleValue="0.050000000000000003" tickMarkPosition="above" sliderType="linear" id="P89-UB-HFA"/>
+                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="0.10000000000000001" doubleValue="0.050000000000000003" tickMarkPosition="above" sliderType="linear" id="P89-UB-HFA"/>
                                 <connections>
                                     <action selector="onChange:" target="XfG-lQ-9wD" id="BK4-A5-FO7"/>
                                 </connections>

@@ -21,9 +21,6 @@ class MacGameViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        slider.maxValue = 0.004
-        slider.maxValue = 0.1
 
         guard let mtkView = self.view as? MTKView else {
             print("View attached to GameViewController is not an MTKView")
