@@ -206,7 +206,7 @@ class Renderer: NSObject, MTKViewDelegate {
         
         uniforms[0].projectionMatrix = projectionMatrix
         
-        let rotationAxis = float3(1, 1, 0)
+        let rotationAxis = float3(0, 1, 0)
         let modelMatrix = matrix4x4_rotation(radians: rotation, axis: rotationAxis)
         let viewMatrix = matrix4x4_translation(0.0, 0.0, -8.0)
         uniforms[0].modelViewMatrix = simd_mul(viewMatrix, modelMatrix)
