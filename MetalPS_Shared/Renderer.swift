@@ -51,6 +51,9 @@ class Renderer: NSObject, MTKViewDelegate {
     
     init?(metalKitView: MTKView) {
         self.device = metalKitView.device!
+        
+        print("正在使用 \(device.name)")
+        
         guard let queue = self.device.makeCommandQueue() else { return nil }
         self.commandQueue = queue
         
