@@ -1,5 +1,5 @@
 * 使用
 * 计划
-** TODO +FOV控制+
+** TODO FOV控制
 ** TODO 鼠标支持
 ** TODO 文档
