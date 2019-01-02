@@ -14,13 +14,15 @@ extension Renderer {
         let notification = NotificationCenter.default
         
         notification.addObserver(self, selector: #selector(onSetStep(_:)),
-                           name: NotificationName.onChange, object: nil)
+                                 name: NotificationName.onChange, object: nil)
         
         notification.addObserver(self, selector: #selector(onLoadModel(_:)),
-                           name: NotificationName.onLoadModel, object: nil)
+                                 name: NotificationName.onLoadModel, object: nil)
+        notification.addObserver(self, selector: #selector(onLoadModelAsync(_:)),
+                                 name: NotificationName.onLoadModelAsync, object: nil)
         
         notification.addObserver(self, selector: #selector(onScale(_:)),
-                           name: NotificationName.onScale, object: nil)
+                                 name: NotificationName.onScale, object: nil)
         
         notification.addObserver(self, selector: #selector(onMoveX(_:)), name: NotificationName.onMoveX, object: nil)
         notification.addObserver(self, selector: #selector(onMoveY(_:)), name: NotificationName.onMoveY, object: nil)

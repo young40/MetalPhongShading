@@ -37,4 +37,14 @@ extension Renderer
             
         }
     }
+    
+    @objc func onLoadModelAsync(_ notification: Notification)
+    {
+        print("正在异步加载模型")
+        let queue = DispatchQueue(label: "LoadModelAsync")
+        
+        queue.async {
+            self.onLoadModel(notification)
+        }
+    }
 }
