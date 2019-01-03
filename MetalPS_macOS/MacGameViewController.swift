@@ -67,7 +67,9 @@ class MacGameViewController: NSViewController {
     
     @objc func onLoadingModelDone(_ notification: Notification)
     {
-        loading.stopAnimation(nil)
-        loading.isHidden = true
+        DispatchQueue.main.async {
+            self.loading.stopAnimation(nil)
+            self.loading.isHidden = true
+        }
     }
 }
