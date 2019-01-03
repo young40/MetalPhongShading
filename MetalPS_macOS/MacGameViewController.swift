@@ -16,11 +16,15 @@ class MacGameViewController: NSViewController {
     var mtkView: MTKView!
     
     @IBOutlet weak var slider: NSSlider!
+    @IBOutlet weak var loading: NSProgressIndicator!
     
     private let menuHandler = MenuHander()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onLoadingModelStart(_:)), name: NotificationName.onLoadingModelStart, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onLoadingModelDone(_:)), name: NotificationName.onLoadingModelDone, object: nil)
 
         guard let mtkView = self.view as? MTKView else {
             print("View attached to GameViewController is not an MTKView")
@@ -53,5 +57,17 @@ class MacGameViewController: NSViewController {
         print("\(sender.floatValue)")
 //        renderer.step = Float(sender.doubleValue)
         NotificationCenter.default.post(name: NotificationName.onChange, object: nil, userInfo: ["value": sender.doubleValue])
+    }
+    
+    @objc func onLoadingModelStart(_ notification: Notification)
+    {
+        loading.startAnimation(nil)
+        loading.isHidden = false
+    }
+    
+    @objc func onLoadingModelDone(_ notification: Notification)
+    {
+        loading.stopAnimation(nil)
+        loading.isHidden = true
     }
 }

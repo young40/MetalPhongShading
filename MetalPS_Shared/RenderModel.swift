@@ -36,6 +36,8 @@ extension Renderer
         } catch {
             
         }
+        
+        NotificationCenter.default.post(name: NotificationName.onLoadingModelDone, object: nil)
     }
     
     @objc func onLoadModelAsync(_ notification: Notification)

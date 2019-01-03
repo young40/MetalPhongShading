@@ -719,13 +719,19 @@
                                     <action selector="onChange:" target="XfG-lQ-9wD" id="BK4-A5-FO7"/>
                                 </connections>
                             </slider>
+                            <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="xMp-14-ebW">
+                                <rect key="frame" x="384" y="284" width="32" height="32"/>
+                            </progressIndicator>
                         </subviews>
                         <constraints>
                             <constraint firstItem="5Ja-d6-kAT" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="UqL-jP-Y4h"/>
+                            <constraint firstItem="xMp-14-ebW" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="ent-lx-lI6"/>
                             <constraint firstItem="5Ja-d6-kAT" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="fzF-V9-Hj0"/>
+                            <constraint firstItem="xMp-14-ebW" firstAttribute="centerX" secondItem="5Ja-d6-kAT" secondAttribute="centerX" id="wj4-fF-CJG"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loading" destination="xMp-14-ebW" id="hSg-Nx-cWI"/>
                         <outlet property="slider" destination="5Ja-d6-kAT" id="IAf-rf-Y97"/>
                     </connections>
                 </viewController>
