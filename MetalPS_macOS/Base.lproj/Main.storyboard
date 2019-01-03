@@ -731,6 +731,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loading" destination="xMp-14-ebW" id="hSg-Nx-cWI"/>
                         <outlet property="slider" destination="5Ja-d6-kAT" id="IAf-rf-Y97"/>
                     </connections>
                 </viewController>
