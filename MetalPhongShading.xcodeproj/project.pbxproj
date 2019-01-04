@@ -11,6 +11,8 @@
 		D5154D8D21D3D89A00D4A16A /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5154D8C21D3D89A00D4A16A /* NotificationName.swift */; };
 		D5154D8E21D3DA0A00D4A16A /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5154D8C21D3D89A00D4A16A /* NotificationName.swift */; };
 		D5154D8F21D3DA0B00D4A16A /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5154D8C21D3D89A00D4A16A /* NotificationName.swift */; };
+		D561013D21DF697B005D1BC0 /* ControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D561013C21DF697B005D1BC0 /* ControlPanel.swift */; };
+		D561013F21DF6992005D1BC0 /* ControlPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D561013E21DF6992005D1BC0 /* ControlPanel.xib */; };
 		D573AC6721D68AF400771E23 /* RenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC6621D68AF400771E23 /* RenderModel.swift */; };
 		D573AC6821D68D2100771E23 /* RenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC6621D68AF400771E23 /* RenderModel.swift */; };
 		D573AC6921D68D2100771E23 /* RenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D573AC6621D68AF400771E23 /* RenderModel.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		D5154D8A21D3CE1200D4A16A /* MenuHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHandler.swift; sourceTree = "<group>"; };
 		D5154D8C21D3D89A00D4A16A /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		D561013C21DF697B005D1BC0 /* ControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanel.swift; sourceTree = "<group>"; };
+		D561013E21DF6992005D1BC0 /* ControlPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlPanel.xib; sourceTree = "<group>"; };
 		D573AC6621D68AF400771E23 /* RenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderModel.swift; sourceTree = "<group>"; };
 		D573AC6A21D6F8EA00771E23 /* MTKViewKeyboardMouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTKViewKeyboardMouse.swift; sourceTree = "<group>"; };
 		D573AC7121D73D8900771E23 /* RenderOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderOperation.swift; sourceTree = "<group>"; };
@@ -161,8 +165,10 @@
 				D5CAB76121CBF64F00CE08F1 /* AppDelegate.swift */,
 				D5CAB76321CBF64F00CE08F1 /* MacGameViewController.swift */,
 				D5154D8A21D3CE1200D4A16A /* MenuHandler.swift */,
+				D561013C21DF697B005D1BC0 /* ControlPanel.swift */,
 				D573AC6A21D6F8EA00771E23 /* MTKViewKeyboardMouse.swift */,
 				D5CAB76521CBF64F00CE08F1 /* Main.storyboard */,
+				D561013E21DF6992005D1BC0 /* ControlPanel.xib */,
 				D5CAB76821CBF64F00CE08F1 /* Info.plist */,
 			);
 			path = MetalPS_macOS;
@@ -288,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CAB76721CBF64F00CE08F1 /* Main.storyboard in Resources */,
+				D561013F21DF6992005D1BC0 /* ControlPanel.xib in Resources */,
 				D5CAB77421CBF64F00CE08F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +345,7 @@
 				D573AC6821D68D2100771E23 /* RenderModel.swift in Sources */,
 				D573AC7421D73D8900771E23 /* RenderOperation.swift in Sources */,
 				D5CAB76421CBF64F00CE08F1 /* MacGameViewController.swift in Sources */,
+				D561013D21DF697B005D1BC0 /* ControlPanel.swift in Sources */,
 				D5CAB76221CBF64F00CE08F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
