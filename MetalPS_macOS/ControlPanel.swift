@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import Cocoa
+
+@IBDesignable class ControlPanel: NSView {
+    required init?(coder decoder: NSCoder) {
+        super.init(coder: decoder)
+    }
+}
