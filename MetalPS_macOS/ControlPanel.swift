@@ -10,6 +10,8 @@ import Foundation
 import Cocoa
 
 @IBDesignable class ControlPanel: NSView {
+    @IBOutlet var controlpanelView: NSView!
+    
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)
     }
