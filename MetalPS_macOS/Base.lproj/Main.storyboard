@@ -723,7 +723,7 @@
                                 <rect key="frame" x="384" y="284" width="32" height="32"/>
                             </progressIndicator>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oCI-cT-kYL" customClass="ControlPanel" customModule="MetalPhongShading" customModuleProvider="target">
-                                <rect key="frame" x="161" y="196" width="275" height="184"/>
+                                <rect key="frame" x="161" y="111" width="369" height="269"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </customView>
                         </subviews>
