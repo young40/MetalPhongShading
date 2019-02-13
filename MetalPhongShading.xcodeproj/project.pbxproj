@@ -558,7 +558,7 @@
 				PRODUCT_NAME = MetalPhongShading;
 				SDKROOT = appletvos;
 				SWIFT_OBJC_BRIDGING_HEADER = MetalPS_Shared/ShaderTypes.h;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.1;
 			};
@@ -580,7 +580,7 @@
 				PRODUCT_NAME = MetalPhongShading;
 				SDKROOT = appletvos;
 				SWIFT_OBJC_BRIDGING_HEADER = MetalPS_Shared/ShaderTypes.h;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.1;
 				VALIDATE_PRODUCT = YES;
@@ -605,7 +605,7 @@
 				PRODUCT_NAME = MetalPhongShading;
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = MetalPS_Shared/ShaderTypes.h;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -627,7 +627,7 @@
 				PRODUCT_NAME = MetalPhongShading;
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = MetalPS_Shared/ShaderTypes.h;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
